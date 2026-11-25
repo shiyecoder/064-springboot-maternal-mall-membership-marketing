@@ -1,0 +1,72 @@
+<!DOCTYPE html><html lang="zh-CN"><head><meta charset="utf-8">
+<title>宝宝档案 · 芽芽母婴会员营销系统</title><link rel="stylesheet" href="assets/style.css"></head>
+<body><div class="app">
+<aside class="side">
+  <div class="brand"><span class="logo">芽</span><div>芽芽母婴<small>MOM &amp; BABY CRM</small></div></div>
+  <nav class="nav"><div class="grp">概览</div><a class="item" href="dashboard.html"><span class="ic"><svg width="15" height="15" fill="currentColor"><use href="#i-dash"/></svg></span>经营驾驶舱</a><div class="grp">会员</div><a class="item" href="member.html"><span class="ic"><svg width="15" height="15" fill="currentColor"><use href="#i-user"/></svg></span>会员档案</a><a class="item on" href="baby.html"><span class="ic"><svg width="15" height="15" fill="currentColor"><use href="#i-baby"/></svg></span>宝宝档案</a><a class="item" href="churn.html"><span class="ic"><svg width="15" height="15" fill="currentColor"><use href="#i-risk"/></svg></span>会员分层看板</a><div class="grp">商品</div><a class="item" href="goods.html"><span class="ic"><svg width="15" height="15" fill="currentColor"><use href="#i-goods"/></svg></span>商品管理</a><a class="item" href="review.html"><span class="ic"><svg width="15" height="15" fill="currentColor"><use href="#i-order"/></svg></span>评价审核</a><div class="grp">营销</div><a class="item" href="coupon.html"><span class="ic"><svg width="15" height="15" fill="currentColor"><use href="#i-coupon"/></svg></span>优惠券配置</a><a class="item" href="grant.html"><span class="ic"><svg width="15" height="15" fill="currentColor"><use href="#i-coupon"/></svg></span>发券任务</a><a class="item" href="repurchase.html"><span class="ic"><svg width="15" height="15" fill="currentColor"><use href="#i-bell"/></svg></span>复购提醒台</a><a class="item" href="report.html"><span class="ic"><svg width="15" height="15" fill="currentColor"><use href="#i-report"/></svg></span>营销报表</a><div class="grp">订单</div><a class="item" href="order.html"><span class="ic"><svg width="15" height="15" fill="currentColor"><use href="#i-order"/></svg></span>订单管理</a><div class="grp">系统</div><a class="item" href="sys.html"><span class="ic"><svg width="15" height="15" fill="currentColor"><use href="#i-set"/></svg></span>用户与权限</a><a class="item" href="churn-rule.html"><span class="ic"><svg width="15" height="15" fill="currentColor"><use href="#i-risk"/></svg></span>流失规则配置</a></nav>
+  <div class="side-foot">门店：杭州滨江星光店<br>v1.0 · 通道3</div>
+</aside>
+<div class="main">
+  <header class="top">
+    <div class="crumb">会员经营 / <b>宝宝档案</b></div>
+    <div class="top-right">
+      <span class="tag pri">店长 · 周敏</span>
+      <svg width="17" height="17" fill="#5B6770"><use href="#i-bell"/></svg>
+      <span class="avatar">周</span>
+    </div>
+  </header>
+  <div class="content">
+<div class="page-head"><h1>宝宝档案</h1><p>月龄每晚按出生日期重算，不手工录入；单会员最多 5 个宝宝</p>
+  <div class="acts"><button class="btn pri">+ 建立宝宝档案</button></div></div>
+<div class="split">
+  <div class="card"><h3>新建档案<span class="sub">导购代录</span></h3>
+    <div class="form">
+      <div class="frow"><label><i>*</i>所属会员</label><input class="inp" value="王雅琴 · 138****2210"></div>
+      <div class="frow"><label><i>*</i>宝宝昵称</label><input class="inp" placeholder="1 至 15 个字"></div>
+      <div class="row2">
+        <div class="frow"><label>性别</label><select class="sel" style="width:100%"><option>女</option><option>男</option><option>未知</option></select></div>
+        <div class="frow"><label><i>*</i>出生日期</label><input class="inp" value="2025-03-18"></div>
+      </div>
+      <div class="frow"><label>月龄（自动计算）</label><input class="inp" value="20 个月" disabled style="background:#F7F7F8">
+        <div class="hint">选择出生日期后实时计算；跨月最后一天按整月计，不多算一个月</div></div>
+      <div class="row2">
+        <div class="frow"><label>身高 cm</label><input class="inp" value="84.5"></div>
+        <div class="frow"><label>体重 kg</label><input class="inp" value="11.2"></div>
+      </div>
+      <div class="row2">
+        <div class="frow"><label>当前奶粉段位</label><select class="sel" style="width:100%"><option>3段</option><option>1段</option><option>2段</option><option>4段</option></select></div>
+        <div class="frow"><label>纸尿裤尺码</label><select class="sel" style="width:100%"><option>XL</option><option>L</option><option>XXL</option></select></div>
+      </div>
+      <div class="frow"><label>过敏史</label><textarea class="inp" style="height:64px;width:100%;padding-top:8px">牛奶蛋白过敏</textarea></div>
+      <div class="notice" style="background:#FDF0E4;color:#A9651C;padding:10px 12px;border-radius:9px;font-size:12px;margin-bottom:14px">
+        修改出生日期导致月龄跨段位时，会提示当前奶粉段位与新标签不一致，需二次确认。</div>
+      <button class="btn pri" style="width:100%">保存档案</button>
+    </div>
+  </div>
+  <div class="card" style="padding:0">
+    <div style="padding:16px 16px 6px"><h3 style="margin:0">宝宝档案列表<span class="sub">共 412 条</span></h3></div>
+    <table><thead><tr><th>编号</th><th>会员</th><th>昵称</th><th>性别</th><th>出生日期</th><th>月龄</th><th>身高</th><th>体重</th>
+    <th>过敏史</th><th>段位</th><th>纸尿裤</th><th>状态</th><th>操作</th></tr></thead><tbody><tr><td class="num">BB000101</td><td>王雅琴</td><td><b>安宝</b></td><td>女</td><td class="num">2025-03-18</td>
+<td><span class="tag pri">20 个月</span></td><td class="num">84.5 cm</td><td class="num">11.2 kg</td><td>牛奶蛋白过敏</td><td>3段</td><td>XL</td><td>有效</td>
+<td><a class="btn link">修改</a><a class="btn link">适龄推荐</a></td></tr><tr><td class="num">BB000102</td><td>李思远</td><td><b>小满</b></td><td>男</td><td class="num">2024-11-02</td>
+<td><span class="tag pri">24 个月</span></td><td class="num">89.0 cm</td><td class="num">12.6 kg</td><td>-</td><td>3段</td><td>XXL</td><td>有效</td>
+<td><a class="btn link">修改</a><a class="btn link">适龄推荐</a></td></tr><tr><td class="num">BB000203</td><td>陈梦琪</td><td><b>团团</b></td><td>男</td><td class="num">2026-01-09</td>
+<td><span class="tag pri">9 个月</span></td><td class="num">71.2 cm</td><td class="num">8.8 kg</td><td>湿疹</td><td>2段</td><td>L</td><td>有效</td>
+<td><a class="btn link">修改</a><a class="btn link">适龄推荐</a></td></tr><tr><td class="num">BB000304</td><td>张若彤</td><td><b>糯米</b></td><td>女</td><td class="num">2026-06-21</td>
+<td><span class="tag pri">4 个月</span></td><td class="num">63.5 cm</td><td class="num">6.9 kg</td><td>-</td><td>1段</td><td>M</td><td>有效</td>
+<td><a class="btn link">修改</a><a class="btn link">适龄推荐</a></td></tr><tr><td class="num">BB000405</td><td>刘一诺</td><td><b>果果</b></td><td>女</td><td class="num">2023-08-14</td>
+<td><span class="tag pri">39 个月</span></td><td class="num">98.0 cm</td><td class="num">14.5 kg</td><td>花生过敏</td><td>4段</td><td>未使用</td><td>停用</td>
+<td><a class="btn link">修改</a><a class="btn link">适龄推荐</a></td></tr></tbody></table><div class="pager">共 412 条　<span class="pg">‹</span><span class="pg on">1</span><span class="pg ">2</span><span class="pg ">3</span><span class="pg ">4</span><span class="pg ">5</span><span class="pg">›</span>　10 条/页</div></div>
+</div></div>
+</div></div><svg xmlns="http://www.w3.org/2000/svg" style="display:none">
+  <symbol id="i-dash" viewBox="0 0 24 24"><path d="M4 13h6V4H4v9zm0 7h6v-5H4v5zm10 0h6v-9h-6v9zm0-16v5h6V4h-6z"/></symbol>
+  <symbol id="i-user" viewBox="0 0 24 24"><path d="M12 12a5 5 0 1 0 0-10 5 5 0 0 0 0 10zm0 2c-5 0-9 2.5-9 5.5V22h18v-2.5c0-3-4-5.5-9-5.5z"/></symbol>
+  <symbol id="i-baby" viewBox="0 0 24 24"><path d="M12 2a5 5 0 0 1 5 5c0 1.3-.5 2.4-1.3 3.3A8 8 0 1 1 7 10.3 5 5 0 0 1 12 2zm-2.5 8.5a1.2 1.2 0 1 0 0 2.4 1.2 1.2 0 0 0 0-2.4zm5 0a1.2 1.2 0 1 0 0 2.4 1.2 1.2 0 0 0 0-2.4z"/></symbol>
+  <symbol id="i-goods" viewBox="0 0 24 24"><path d="M6 3h12l2 5v13H4V8l2-5zm2 2-1 3h10l-1-3H8z"/></symbol>
+  <symbol id="i-coupon" viewBox="0 0 24 24"><path d="M3 7h18v4a2 2 0 0 0 0 4v4H3v-4a2 2 0 0 0 0-4V7zm6 2v8m6-8v8"/></symbol>
+  <symbol id="i-order" viewBox="0 0 24 24"><path d="M6 2h9l5 5v15H6V2zm2 6h6v2H8V8zm0 5h8v2H8v-2zm0 5h5v2H8v-2z"/></symbol>
+  <symbol id="i-bell" viewBox="0 0 24 24"><path d="M12 2a6 6 0 0 1 6 6v5l2 3H4l2-3V8a6 6 0 0 1 6-6zm-2 16h4a2 2 0 0 1-4 0z"/></symbol>
+  <symbol id="i-report" viewBox="0 0 24 24"><path d="M4 20h16v-6H4v6zM4 12h6V4H4v8zm8 0h8V4h-8v8z"/></symbol>
+  <symbol id="i-set" viewBox="0 0 24 24"><path d="M12 8a4 4 0 1 0 0 8 4 4 0 0 0 0-8zm9 4-2-1 1-2-2-2-2 1-1-2h-3l-1 2-2-1-2 2 1 2-2 1v3l2 1-1 2 2 2 2-1 1 2h3l1-2 2 1 2-2-1-2 2-1v-3z"/></symbol>
+  <symbol id="i-risk" viewBox="0 0 24 24"><path d="M12 2 2 21h20L12 2zm0 6 5 10H7l5-10zm-1 3v4h2v-4h-2zm0 5v2h2v-2h-2z"/></symbol>
+</svg></body></html>

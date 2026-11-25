@@ -1,0 +1,77 @@
+<!DOCTYPE html><html lang="zh-CN"><head><meta charset="utf-8">
+<title>营销报表 · 芽芽母婴会员营销系统</title><link rel="stylesheet" href="assets/style.css"></head>
+<body><div class="app">
+<aside class="side">
+  <div class="brand"><span class="logo">芽</span><div>芽芽母婴<small>MOM &amp; BABY CRM</small></div></div>
+  <nav class="nav"><div class="grp">概览</div><a class="item" href="dashboard.html"><span class="ic"><svg width="15" height="15" fill="currentColor"><use href="#i-dash"/></svg></span>经营驾驶舱</a><div class="grp">会员</div><a class="item" href="member.html"><span class="ic"><svg width="15" height="15" fill="currentColor"><use href="#i-user"/></svg></span>会员档案</a><a class="item" href="baby.html"><span class="ic"><svg width="15" height="15" fill="currentColor"><use href="#i-baby"/></svg></span>宝宝档案</a><a class="item" href="churn.html"><span class="ic"><svg width="15" height="15" fill="currentColor"><use href="#i-risk"/></svg></span>会员分层看板</a><div class="grp">商品</div><a class="item" href="goods.html"><span class="ic"><svg width="15" height="15" fill="currentColor"><use href="#i-goods"/></svg></span>商品管理</a><a class="item" href="review.html"><span class="ic"><svg width="15" height="15" fill="currentColor"><use href="#i-order"/></svg></span>评价审核</a><div class="grp">营销</div><a class="item" href="coupon.html"><span class="ic"><svg width="15" height="15" fill="currentColor"><use href="#i-coupon"/></svg></span>优惠券配置</a><a class="item" href="grant.html"><span class="ic"><svg width="15" height="15" fill="currentColor"><use href="#i-coupon"/></svg></span>发券任务</a><a class="item" href="repurchase.html"><span class="ic"><svg width="15" height="15" fill="currentColor"><use href="#i-bell"/></svg></span>复购提醒台</a><a class="item on" href="report.html"><span class="ic"><svg width="15" height="15" fill="currentColor"><use href="#i-report"/></svg></span>营销报表</a><div class="grp">订单</div><a class="item" href="order.html"><span class="ic"><svg width="15" height="15" fill="currentColor"><use href="#i-order"/></svg></span>订单管理</a><div class="grp">系统</div><a class="item" href="sys.html"><span class="ic"><svg width="15" height="15" fill="currentColor"><use href="#i-set"/></svg></span>用户与权限</a><a class="item" href="churn-rule.html"><span class="ic"><svg width="15" height="15" fill="currentColor"><use href="#i-risk"/></svg></span>流失规则配置</a></nav>
+  <div class="side-foot">门店：杭州滨江星光店<br>v1.0 · 通道3</div>
+</aside>
+<div class="main">
+  <header class="top">
+    <div class="crumb">会员经营 / <b>营销报表</b></div>
+    <div class="top-right">
+      <span class="tag pri">店长 · 周敏</span>
+      <svg width="17" height="17" fill="#5B6770"><use href="#i-bell"/></svg>
+      <span class="avatar">周</span>
+    </div>
+  </header>
+  <div class="content">
+<div class="page-head"><h1>营销报表</h1><p>口径按订单完成时间归属自然月，已退款订单从销售额与积分中剔除</p>
+  <div class="acts"><select class="sel"><option>2026 年 11 月</option><option>2026 年 10 月</option></select>
+  <button class="btn">按门店下钻</button><button class="btn pri">导出 Excel</button></div></div>
+<div class="grid g5" style="margin-bottom:16px">
+  <div class="kpi"><div class="lb">券领取量</div><div class="vv">5,418</div><div class="df">环比 +8.2%</div></div>
+  <div class="kpi"><div class="lb">券核销量</div><div class="vv">4,028</div><div class="df">核销率 74.3%</div></div>
+  <div class="kpi"><div class="lb">券带动销售额</div><div class="vv">¥178,660</div><div class="df">ROI 2.9</div></div>
+  <div class="kpi"><div class="lb">会员复购率</div><div class="vv">42.6%</div><div class="df down">环比 -1.2%</div></div>
+  <div class="kpi"><div class="lb">积分沉淀比</div><div class="vv">1.8<small>: 1</small></div><div class="df down">超阈值 1.5</div></div>
+</div>
+<div class="grid g3" style="margin-bottom:16px">
+  <div class="card" style="grid-column:span 2"><h3>券活动效果<span class="sub">按券类型分组</span></h3>
+    <table><thead><tr><th>券活动</th><th>类型</th><th class="t-right">领取</th><th class="t-right">核销</th><th class="t-right">核销率</th>
+    <th class="t-right">带动销售额</th><th class="t-right">券成本</th><th class="t-right">ROI</th></tr></thead><tbody><tr><td><b>金卡专享满 300 减 50</b></td><td>满减</td><td class="num t-right">1,284</td><td class="num t-right">986</td>
+<td class="num t-right"><b>76.8%</b></td><td class="num t-right">¥62,180</td><td class="num t-right">¥49,300</td><td class="num t-right">3.2</td></tr><tr><td><b>新人礼包满 99 减 20</b></td><td>满减</td><td class="num t-right">3,120</td><td class="num t-right">1,842</td>
+<td class="num t-right"><b>59.0%</b></td><td class="num t-right">¥41,260</td><td class="num t-right">¥36,840</td><td class="num t-right">2.8</td></tr><tr><td><b>纸尿裤品类满 199 减 30</b></td><td>满减</td><td class="num t-right">800</td><td class="num t-right">612</td>
+<td class="num t-right"><b>76.5%</b></td><td class="num t-right">¥28,940</td><td class="num t-right">¥18,360</td><td class="num t-right">3.6</td></tr><tr><td><b>黑卡 9 折券</b></td><td>折扣</td><td class="num t-right">214</td><td class="num t-right">186</td>
+<td class="num t-right"><b>86.9%</b></td><td class="num t-right">¥36,420</td><td class="num t-right">¥3,642</td><td class="num t-right">2.4</td></tr><tr><td><b>辅食立减 10 元</b></td><td>立减</td><td class="num t-right">1,000</td><td class="num t-right">402</td>
+<td class="num t-right"><b>40.2%</b></td><td class="num t-right">¥9,860</td><td class="num t-right">¥4,020</td><td class="num t-right">1.9</td></tr></tbody></table></div>
+  <div class="card"><h3>积分健康度</h3>
+    <div class="bars-h" style="margin-top:10px">
+      <div class="r"><span class="nm">发放</span><span class="tr"><i style="width:100%"></i></span><span class="num">128.4k</span></div>
+      <div class="r"><span class="nm">消耗</span><span class="tr"><i style="width:56%"></i></span><span class="num">71.2k</span></div>
+      <div class="r"><span class="nm">过期</span><span class="tr"><i style="width:9%"></i></span><span class="num">11.6k</span></div>
+      <div class="r"><span class="nm">沉淀</span><span class="tr"><i style="width:45%"></i></span><span class="num">45.6k</span></div>
+    </div>
+    <div style="background:#FDF0E4;color:#A9651C;border-radius:10px;padding:11px 12px;font-size:12px;margin-top:16px">
+      沉淀比 1.8 已超阈值 1.5，建议上线「积分兑纸尿裤试用装」活动消化沉淀。</div>
+    <div class="kv" style="margin-top:10px"><span class="k">召回成功率</span><span class="v">54.8%（17 / 31）</span></div>
+  </div>
+</div>
+<div class="grid g2">
+  <div class="card"><h3>宝宝月龄段购买分布</h3>
+    <div class="chart">
+      <div class="bar" style="height:42%"><span>0-6月</span></div><div class="bar" style="height:66%"><span>7-12月</span></div>
+      <div class="bar" style="height:92%"><span>13-24月</span></div><div class="bar" style="height:74%"><span>25-36月</span></div>
+      <div class="bar" style="height:38%"><span>36月+</span></div>
+    </div><div style="height:18px"></div>
+    <div class="mini">13-24 月龄段贡献 34% 销售额，与 3 段奶粉、L/XL 码纸尿裤重合。</div></div>
+  <div class="card"><h3>按导购下钻</h3>
+    <table><thead><tr><th>导购</th><th class="t-right">会员数</th><th class="t-right">本月销售额</th><th class="t-right">复购率</th><th class="t-right">召回成功</th></tr></thead>
+    <tbody>
+      <tr><td>林小满</td><td class="num t-right">186</td><td class="num t-right">¥42,180</td><td class="num t-right">48.2%</td><td class="num t-right">7</td></tr>
+      <tr><td>王璐</td><td class="num t-right">162</td><td class="num t-right">¥36,420</td><td class="num t-right">45.6%</td><td class="num t-right">6</td></tr>
+      <tr><td>陈曦</td><td class="num t-right">144</td><td class="num t-right">¥29,860</td><td class="num t-right">39.1%</td><td class="num t-right">4</td></tr>
+    </tbody></table></div>
+</div></div>
+</div></div><svg xmlns="http://www.w3.org/2000/svg" style="display:none">
+  <symbol id="i-dash" viewBox="0 0 24 24"><path d="M4 13h6V4H4v9zm0 7h6v-5H4v5zm10 0h6v-9h-6v9zm0-16v5h6V4h-6z"/></symbol>
+  <symbol id="i-user" viewBox="0 0 24 24"><path d="M12 12a5 5 0 1 0 0-10 5 5 0 0 0 0 10zm0 2c-5 0-9 2.5-9 5.5V22h18v-2.5c0-3-4-5.5-9-5.5z"/></symbol>
+  <symbol id="i-baby" viewBox="0 0 24 24"><path d="M12 2a5 5 0 0 1 5 5c0 1.3-.5 2.4-1.3 3.3A8 8 0 1 1 7 10.3 5 5 0 0 1 12 2zm-2.5 8.5a1.2 1.2 0 1 0 0 2.4 1.2 1.2 0 0 0 0-2.4zm5 0a1.2 1.2 0 1 0 0 2.4 1.2 1.2 0 0 0 0-2.4z"/></symbol>
+  <symbol id="i-goods" viewBox="0 0 24 24"><path d="M6 3h12l2 5v13H4V8l2-5zm2 2-1 3h10l-1-3H8z"/></symbol>
+  <symbol id="i-coupon" viewBox="0 0 24 24"><path d="M3 7h18v4a2 2 0 0 0 0 4v4H3v-4a2 2 0 0 0 0-4V7zm6 2v8m6-8v8"/></symbol>
+  <symbol id="i-order" viewBox="0 0 24 24"><path d="M6 2h9l5 5v15H6V2zm2 6h6v2H8V8zm0 5h8v2H8v-2zm0 5h5v2H8v-2z"/></symbol>
+  <symbol id="i-bell" viewBox="0 0 24 24"><path d="M12 2a6 6 0 0 1 6 6v5l2 3H4l2-3V8a6 6 0 0 1 6-6zm-2 16h4a2 2 0 0 1-4 0z"/></symbol>
+  <symbol id="i-report" viewBox="0 0 24 24"><path d="M4 20h16v-6H4v6zM4 12h6V4H4v8zm8 0h8V4h-8v8z"/></symbol>
+  <symbol id="i-set" viewBox="0 0 24 24"><path d="M12 8a4 4 0 1 0 0 8 4 4 0 0 0 0-8zm9 4-2-1 1-2-2-2-2 1-1-2h-3l-1 2-2-1-2 2 1 2-2 1v3l2 1-1 2 2 2 2-1 1 2h3l1-2 2 1 2-2-1-2 2-1v-3z"/></symbol>
+  <symbol id="i-risk" viewBox="0 0 24 24"><path d="M12 2 2 21h20L12 2zm0 6 5 10H7l5-10zm-1 3v4h2v-4h-2zm0 5v2h2v-2h-2z"/></symbol>
+</svg></body></html>

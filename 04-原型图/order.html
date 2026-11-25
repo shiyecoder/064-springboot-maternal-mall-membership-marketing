@@ -1,0 +1,66 @@
+<!DOCTYPE html><html lang="zh-CN"><head><meta charset="utf-8">
+<title>订单管理 · 芽芽母婴会员营销系统</title><link rel="stylesheet" href="assets/style.css"></head>
+<body><div class="app">
+<aside class="side">
+  <div class="brand"><span class="logo">芽</span><div>芽芽母婴<small>MOM &amp; BABY CRM</small></div></div>
+  <nav class="nav"><div class="grp">概览</div><a class="item" href="dashboard.html"><span class="ic"><svg width="15" height="15" fill="currentColor"><use href="#i-dash"/></svg></span>经营驾驶舱</a><div class="grp">会员</div><a class="item" href="member.html"><span class="ic"><svg width="15" height="15" fill="currentColor"><use href="#i-user"/></svg></span>会员档案</a><a class="item" href="baby.html"><span class="ic"><svg width="15" height="15" fill="currentColor"><use href="#i-baby"/></svg></span>宝宝档案</a><a class="item" href="churn.html"><span class="ic"><svg width="15" height="15" fill="currentColor"><use href="#i-risk"/></svg></span>会员分层看板</a><div class="grp">商品</div><a class="item" href="goods.html"><span class="ic"><svg width="15" height="15" fill="currentColor"><use href="#i-goods"/></svg></span>商品管理</a><a class="item" href="review.html"><span class="ic"><svg width="15" height="15" fill="currentColor"><use href="#i-order"/></svg></span>评价审核</a><div class="grp">营销</div><a class="item" href="coupon.html"><span class="ic"><svg width="15" height="15" fill="currentColor"><use href="#i-coupon"/></svg></span>优惠券配置</a><a class="item" href="grant.html"><span class="ic"><svg width="15" height="15" fill="currentColor"><use href="#i-coupon"/></svg></span>发券任务</a><a class="item" href="repurchase.html"><span class="ic"><svg width="15" height="15" fill="currentColor"><use href="#i-bell"/></svg></span>复购提醒台</a><a class="item" href="report.html"><span class="ic"><svg width="15" height="15" fill="currentColor"><use href="#i-report"/></svg></span>营销报表</a><div class="grp">订单</div><a class="item on" href="order.html"><span class="ic"><svg width="15" height="15" fill="currentColor"><use href="#i-order"/></svg></span>订单管理</a><div class="grp">系统</div><a class="item" href="sys.html"><span class="ic"><svg width="15" height="15" fill="currentColor"><use href="#i-set"/></svg></span>用户与权限</a><a class="item" href="churn-rule.html"><span class="ic"><svg width="15" height="15" fill="currentColor"><use href="#i-risk"/></svg></span>流失规则配置</a></nav>
+  <div class="side-foot">门店：杭州滨江星光店<br>v1.0 · 通道3</div>
+</aside>
+<div class="main">
+  <header class="top">
+    <div class="crumb">会员经营 / <b>订单管理</b></div>
+    <div class="top-right">
+      <span class="tag pri">店长 · 周敏</span>
+      <svg width="17" height="17" fill="#5B6770"><use href="#i-bell"/></svg>
+      <span class="avatar">周</span>
+    </div>
+  </header>
+  <div class="content">
+<div class="page-head"><h1>订单管理</h1><p>状态流转由后端 transition 服务校验，禁止前端直接改 status</p>
+  <div class="acts"><button class="btn">导出订单</button><button class="btn pri">+ 代客下单</button></div></div>
+<div class="tabs"><span class="t on">全部 72</span><span class="t">待支付 6</span><span class="t">待发货 11</span>
+<span class="t">已发货 14</span><span class="t">已完成 32</span><span class="t">退货中 3</span><span class="t">已取消 6</span></div>
+<div class="filters">
+  <div class="fi">下单时间<input class="inp" value="2026-10-01 ~ 2026-11-02" style="width:230px"></div>
+  <div class="fi">支付方式<select class="sel"><option>全部</option><option>微信</option><option>支付宝</option></select></div>
+  <input class="inp" placeholder="订单编号 / 会员昵称">
+  <button class="btn pri">查询</button><button class="btn">重置</button>
+</div>
+<div class="card" style="padding:0">
+<table><thead><tr><th>订单编号</th><th>会员</th><th class="t-right">件数</th><th class="t-right">商品金额</th><th class="t-right">优惠</th>
+<th class="t-right">运费</th><th class="t-right">实付</th><th class="t-right">积分</th><th>支付</th><th>状态</th><th>下单时间</th><th>操作</th></tr></thead>
+<tbody><tr><td class="num">MO261102000021</td><td><b>王雅琴</b></td><td class="num t-right">3</td>
+<td class="num t-right">¥868.00</td><td class="num t-right">-¥50.00</td><td class="num t-right">¥0.00</td>
+<td class="num t-right"><b>¥818.00</b></td><td class="num t-right">818</td><td>微信</td><td><span class="tag ok">已完成</span></td><td class="num">2026-11-01 20:12</td>
+<td><a class="btn link">详情</a><a class="btn link">查看</a></td></tr><tr><td class="num">MO261102000022</td><td><b>李思远</b></td><td class="num t-right">1</td>
+<td class="num t-right">¥168.00</td><td class="num t-right">-¥0.00</td><td class="num t-right">¥8.00</td>
+<td class="num t-right"><b>¥176.00</b></td><td class="num t-right">176</td><td>支付宝</td><td><span class="tag pri">待发货</span></td><td class="num">2026-11-02 09:04</td>
+<td><a class="btn link">详情</a><a class="btn link">发货</a></td></tr><tr><td class="num">MO261102000023</td><td><b>陈梦琪</b></td><td class="num t-right">2</td>
+<td class="num t-right">¥276.00</td><td class="num t-right">-¥30.00</td><td class="num t-right">¥0.00</td>
+<td class="num t-right"><b>¥246.00</b></td><td class="num t-right">246</td><td>微信</td><td><span class="tag acc">已发货</span></td><td class="num">2026-11-01 14:33</td>
+<td><a class="btn link">详情</a><a class="btn link">确认收货</a></td></tr><tr><td class="num">MO261102000024</td><td><b>张若彤</b></td><td class="num t-right">1</td>
+<td class="num t-right">¥58.00</td><td class="num t-right">-¥20.00</td><td class="num t-right">¥8.00</td>
+<td class="num t-right"><b>¥46.00</b></td><td class="num t-right">46</td><td>储值卡</td><td><span class="tag warn">待支付</span></td><td class="num">2026-11-02 08:51</td>
+<td><a class="btn link">详情</a><a class="btn link">取消</a></td></tr><tr><td class="num">MO261102000025</td><td><b>刘一诺</b></td><td class="num t-right">4</td>
+<td class="num t-right">¥702.00</td><td class="num t-right">-¥0.00</td><td class="num t-right">¥0.00</td>
+<td class="num t-right"><b>¥702.00</b></td><td class="num t-right">702</td><td>微信</td><td><span class="tag warn">退货中</span></td><td class="num">2026-10-30 19:20</td>
+<td><a class="btn link">详情</a><a class="btn link">审核退货</a></td></tr><tr><td class="num">MO261102000026</td><td><b>孙悦然</b></td><td class="num t-right">2</td>
+<td class="num t-right">¥196.00</td><td class="num t-right">-¥0.00</td><td class="num t-right">¥8.00</td>
+<td class="num t-right"><b>¥204.00</b></td><td class="num t-right">204</td><td>支付宝</td><td><span class="tag dan">已退款</span></td><td class="num">2026-10-12 11:08</td>
+<td><a class="btn link">详情</a><a class="btn link">查看</a></td></tr><tr><td class="num">MO261102000027</td><td><b>王雅琴</b></td><td class="num t-right">1</td>
+<td class="num t-right">¥328.00</td><td class="num t-right">-¥0.00</td><td class="num t-right">¥0.00</td>
+<td class="num t-right"><b>¥328.00</b></td><td class="num t-right">328</td><td>微信</td><td><span class="tag ">已取消</span></td><td class="num">2026-10-08 16:40</td>
+<td><a class="btn link">详情</a><a class="btn link">查看</a></td></tr></tbody></table><div class="pager">共 72 条　<span class="pg">‹</span><span class="pg on">1</span><span class="pg ">2</span><span class="pg ">3</span><span class="pg ">4</span><span class="pg ">5</span><span class="pg">›</span>　10 条/页</div></div>
+<div class="mini" style="margin-top:12px">待支付订单 30 分钟内未支付将自动取消，并回补库存、返还优惠券；退款完成后按比例扣回积分并重算会员等级。</div></div>
+</div></div><svg xmlns="http://www.w3.org/2000/svg" style="display:none">
+  <symbol id="i-dash" viewBox="0 0 24 24"><path d="M4 13h6V4H4v9zm0 7h6v-5H4v5zm10 0h6v-9h-6v9zm0-16v5h6V4h-6z"/></symbol>
+  <symbol id="i-user" viewBox="0 0 24 24"><path d="M12 12a5 5 0 1 0 0-10 5 5 0 0 0 0 10zm0 2c-5 0-9 2.5-9 5.5V22h18v-2.5c0-3-4-5.5-9-5.5z"/></symbol>
+  <symbol id="i-baby" viewBox="0 0 24 24"><path d="M12 2a5 5 0 0 1 5 5c0 1.3-.5 2.4-1.3 3.3A8 8 0 1 1 7 10.3 5 5 0 0 1 12 2zm-2.5 8.5a1.2 1.2 0 1 0 0 2.4 1.2 1.2 0 0 0 0-2.4zm5 0a1.2 1.2 0 1 0 0 2.4 1.2 1.2 0 0 0 0-2.4z"/></symbol>
+  <symbol id="i-goods" viewBox="0 0 24 24"><path d="M6 3h12l2 5v13H4V8l2-5zm2 2-1 3h10l-1-3H8z"/></symbol>
+  <symbol id="i-coupon" viewBox="0 0 24 24"><path d="M3 7h18v4a2 2 0 0 0 0 4v4H3v-4a2 2 0 0 0 0-4V7zm6 2v8m6-8v8"/></symbol>
+  <symbol id="i-order" viewBox="0 0 24 24"><path d="M6 2h9l5 5v15H6V2zm2 6h6v2H8V8zm0 5h8v2H8v-2zm0 5h5v2H8v-2z"/></symbol>
+  <symbol id="i-bell" viewBox="0 0 24 24"><path d="M12 2a6 6 0 0 1 6 6v5l2 3H4l2-3V8a6 6 0 0 1 6-6zm-2 16h4a2 2 0 0 1-4 0z"/></symbol>
+  <symbol id="i-report" viewBox="0 0 24 24"><path d="M4 20h16v-6H4v6zM4 12h6V4H4v8zm8 0h8V4h-8v8z"/></symbol>
+  <symbol id="i-set" viewBox="0 0 24 24"><path d="M12 8a4 4 0 1 0 0 8 4 4 0 0 0 0-8zm9 4-2-1 1-2-2-2-2 1-1-2h-3l-1 2-2-1-2 2 1 2-2 1v3l2 1-1 2 2 2 2-1 1 2h3l1-2 2 1 2-2-1-2 2-1v-3z"/></symbol>
+  <symbol id="i-risk" viewBox="0 0 24 24"><path d="M12 2 2 21h20L12 2zm0 6 5 10H7l5-10zm-1 3v4h2v-4h-2zm0 5v2h2v-2h-2z"/></symbol>
+</svg></body></html>

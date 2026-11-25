@@ -1,0 +1,60 @@
+<!DOCTYPE html><html lang="zh-CN"><head><meta charset="utf-8">
+<title>流失规则配置 · 芽芽母婴会员营销系统</title><link rel="stylesheet" href="assets/style.css"></head>
+<body><div class="app">
+<aside class="side">
+  <div class="brand"><span class="logo">芽</span><div>芽芽母婴<small>MOM &amp; BABY CRM</small></div></div>
+  <nav class="nav"><div class="grp">概览</div><a class="item" href="dashboard.html"><span class="ic"><svg width="15" height="15" fill="currentColor"><use href="#i-dash"/></svg></span>经营驾驶舱</a><div class="grp">会员</div><a class="item" href="member.html"><span class="ic"><svg width="15" height="15" fill="currentColor"><use href="#i-user"/></svg></span>会员档案</a><a class="item" href="baby.html"><span class="ic"><svg width="15" height="15" fill="currentColor"><use href="#i-baby"/></svg></span>宝宝档案</a><a class="item" href="churn.html"><span class="ic"><svg width="15" height="15" fill="currentColor"><use href="#i-risk"/></svg></span>会员分层看板</a><div class="grp">商品</div><a class="item" href="goods.html"><span class="ic"><svg width="15" height="15" fill="currentColor"><use href="#i-goods"/></svg></span>商品管理</a><a class="item" href="review.html"><span class="ic"><svg width="15" height="15" fill="currentColor"><use href="#i-order"/></svg></span>评价审核</a><div class="grp">营销</div><a class="item" href="coupon.html"><span class="ic"><svg width="15" height="15" fill="currentColor"><use href="#i-coupon"/></svg></span>优惠券配置</a><a class="item" href="grant.html"><span class="ic"><svg width="15" height="15" fill="currentColor"><use href="#i-coupon"/></svg></span>发券任务</a><a class="item" href="repurchase.html"><span class="ic"><svg width="15" height="15" fill="currentColor"><use href="#i-bell"/></svg></span>复购提醒台</a><a class="item" href="report.html"><span class="ic"><svg width="15" height="15" fill="currentColor"><use href="#i-report"/></svg></span>营销报表</a><div class="grp">订单</div><a class="item" href="order.html"><span class="ic"><svg width="15" height="15" fill="currentColor"><use href="#i-order"/></svg></span>订单管理</a><div class="grp">系统</div><a class="item" href="sys.html"><span class="ic"><svg width="15" height="15" fill="currentColor"><use href="#i-set"/></svg></span>用户与权限</a><a class="item on" href="churn-rule.html"><span class="ic"><svg width="15" height="15" fill="currentColor"><use href="#i-risk"/></svg></span>流失规则配置</a></nav>
+  <div class="side-foot">门店：杭州滨江星光店<br>v1.0 · 通道3</div>
+</aside>
+<div class="main">
+  <header class="top">
+    <div class="crumb">会员经营 / <b>流失规则配置</b></div>
+    <div class="top-right">
+      <span class="tag pri">店长 · 周敏</span>
+      <svg width="17" height="17" fill="#5B6770"><use href="#i-bell"/></svg>
+      <span class="avatar">周</span>
+    </div>
+  </header>
+  <div class="content">
+<div class="page-head"><h1>流失规则配置</h1><p>权重合计必须 100%　·　修改仅影响新计算或主动重算的数据</p>
+  <div class="acts"><button class="btn">查看历史版本</button><button class="btn pri">保存并发布 v4</button></div></div>
+<div class="grid g2">
+  <div class="card"><h3>因素权重<span class="sub">当前版本 v3 · 2026-10-20 生效</span></h3>
+    <div class="weight"><span class="nm">最近购买间隔</span><span class="sl"><i style="width:35%"></i><u style="left:35%"></u></span>
+<span class="pt">35%</span><span class="mini" style="width:300px">member.last_buy_time 距今天数，超 90 天记 100 分</span></div><div class="weight"><span class="nm">近 90 天消费频次</span><span class="sl"><i style="width:25%"></i><u style="left:25%"></u></span>
+<span class="pt">25%</span><span class="mini" style="width:300px">已完成订单数按月折算，注册不足 90 天按实际天数</span></div><div class="weight"><span class="nm">客单价变化率</span><span class="sl"><i style="width:20%"></i><u style="left:20%"></u></span>
+<span class="pt">20%</span><span class="mini" style="width:300px">近 90 天对比上一个 90 天，无上期样本按 0 分</span></div><div class="weight"><span class="nm">优惠券使用率</span><span class="sl"><i style="width:10%"></i><u style="left:10%"></u></span>
+<span class="pt">10%</span><span class="mini" style="width:300px">已使用 / 领取，近 180 天未领券按 0 分</span></div><div class="weight"><span class="nm">宝宝月龄阶段跨度</span><span class="sl"><i style="width:10%"></i><u style="left:10%"></u></span>
+<span class="pt">10%</span><span class="mini" style="width:300px">月龄与最近购买品类适龄段差值，无档案按 60 分基准</span></div>
+    <div style="display:flex;justify-content:space-between;padding-top:14px;font-size:13px">
+      <span>权重合计</span><b style="color:var(--ok)">100%　校验通过</b></div>
+    <div class="hint" style="margin-top:8px">发布后记录版本号与生效时间，历史计算结果不受影响；重算需人工触发并留痕。</div>
+  </div>
+  <div class="grid" style="gap:16px">
+    <div class="card"><h3>分级阈值</h3>
+      <div class="kv"><span class="k">高风险</span><span class="v">风险分 ≥ 75，48 小时内电话召回 + 定向满减券</span></div>
+      <div class="kv"><span class="k">中风险</span><span class="v">50 ≤ 风险分 &lt; 75，7 天内复购提醒</span></div>
+      <div class="kv"><span class="k">低风险</span><span class="v">风险分 &lt; 50，按月提醒不额外发券</span></div>
+      <div class="kv"><span class="k">线性归一</span><span class="v">距今天数按 90 天分段归一，超过 90 天记 100</span></div>
+    </div>
+    <div class="card"><h3>计算留痕示例<span class="sub">快照 #SC2611020017</span></h3>
+      <div class="kv"><span class="k">会员</span><span class="v">张若彤 · 普通会员 · 规则版本 v3</span></div>
+      <div class="kv"><span class="k">输入快照</span><span class="v">间隔 96 天 / 频次 0.3 次月 / 客单变化 -46% / 券使用率 0% / 无宝宝档案</span></div>
+      <div class="kv"><span class="k">各因素得分</span><span class="v">100 × 35% + 82 × 25% + 74 × 20% + 100 × 10% + 60 × 10% = 88.3</span></div>
+      <div class="kv"><span class="k">结论</span><span class="v"><span class="tag dan">高风险 88</span>　建议 48 小时内电话召回，并发放满 199 减 30 券</span></div>
+      <div class="kv"><span class="k">未满足条件</span><span class="v">缺少宝宝档案，月龄因素按基准 60 分计入，建议导购补录</span></div>
+    </div>
+  </div>
+</div></div>
+</div></div><svg xmlns="http://www.w3.org/2000/svg" style="display:none">
+  <symbol id="i-dash" viewBox="0 0 24 24"><path d="M4 13h6V4H4v9zm0 7h6v-5H4v5zm10 0h6v-9h-6v9zm0-16v5h6V4h-6z"/></symbol>
+  <symbol id="i-user" viewBox="0 0 24 24"><path d="M12 12a5 5 0 1 0 0-10 5 5 0 0 0 0 10zm0 2c-5 0-9 2.5-9 5.5V22h18v-2.5c0-3-4-5.5-9-5.5z"/></symbol>
+  <symbol id="i-baby" viewBox="0 0 24 24"><path d="M12 2a5 5 0 0 1 5 5c0 1.3-.5 2.4-1.3 3.3A8 8 0 1 1 7 10.3 5 5 0 0 1 12 2zm-2.5 8.5a1.2 1.2 0 1 0 0 2.4 1.2 1.2 0 0 0 0-2.4zm5 0a1.2 1.2 0 1 0 0 2.4 1.2 1.2 0 0 0 0-2.4z"/></symbol>
+  <symbol id="i-goods" viewBox="0 0 24 24"><path d="M6 3h12l2 5v13H4V8l2-5zm2 2-1 3h10l-1-3H8z"/></symbol>
+  <symbol id="i-coupon" viewBox="0 0 24 24"><path d="M3 7h18v4a2 2 0 0 0 0 4v4H3v-4a2 2 0 0 0 0-4V7zm6 2v8m6-8v8"/></symbol>
+  <symbol id="i-order" viewBox="0 0 24 24"><path d="M6 2h9l5 5v15H6V2zm2 6h6v2H8V8zm0 5h8v2H8v-2zm0 5h5v2H8v-2z"/></symbol>
+  <symbol id="i-bell" viewBox="0 0 24 24"><path d="M12 2a6 6 0 0 1 6 6v5l2 3H4l2-3V8a6 6 0 0 1 6-6zm-2 16h4a2 2 0 0 1-4 0z"/></symbol>
+  <symbol id="i-report" viewBox="0 0 24 24"><path d="M4 20h16v-6H4v6zM4 12h6V4H4v8zm8 0h8V4h-8v8z"/></symbol>
+  <symbol id="i-set" viewBox="0 0 24 24"><path d="M12 8a4 4 0 1 0 0 8 4 4 0 0 0 0-8zm9 4-2-1 1-2-2-2-2 1-1-2h-3l-1 2-2-1-2 2 1 2-2 1v3l2 1-1 2 2 2 2-1 1 2h3l1-2 2 1 2-2-1-2 2-1v-3z"/></symbol>
+  <symbol id="i-risk" viewBox="0 0 24 24"><path d="M12 2 2 21h20L12 2zm0 6 5 10H7l5-10zm-1 3v4h2v-4h-2zm0 5v2h2v-2h-2z"/></symbol>
+</svg></body></html>
